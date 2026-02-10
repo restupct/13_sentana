@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Cyber Profile - Hamba Agung S</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            min-height: 100vh;
+            font-family: 'Segoe UI', sans-serif;
+            background: radial-gradient(circle at top, #0f2027, #000);
+            color: #e0f7fa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 0;
+            overflow-x: hidden;
+        }
+
+        /* background circuit */
+        body::before {
+            content: "";
+            position: fixed;
+            inset: 0;
+            background-image:
+                linear-gradient(90deg, rgba(0,255,255,0.05) 1px, transparent 1px),
+                linear-gradient(rgba(0,255,255,0.05) 1px, transparent 1px);
+            background-size: 60px 60px;
+            z-index: -1;
+        }
+
+        .container {
+            width: 420px;
+            background: rgba(10, 20, 30, 0.85);
+            border: 1px solid #00e5ff;
+            border-radius: 18px;
+            padding: 30px;
+            box-shadow: 0 0 25px rgba(0,229,255,0.25);
+        }
+
+        /* HEADER */
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .header h1 {
+            font-size: 26px;
+            letter-spacing: 2px;
+            color: #00e5ff;
+            text-shadow: 0 0 10px #00e5ff;
+        }
+
+        .header p {
+            margin-top: 6px;
+            font-size: 14px;
+            color: #80deea;
+        }
+
+        /* FOTO */
+        .profile-pic {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .profile-pic img {
+            width: 130px;
+            height: 130px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 3px solid #00e5ff;
+            box-shadow: 0 0 20px rgba(0,229,255,0.8);
+        }
+
+        /* CIRCUIT LINE */
+        .circuit-line {
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #00e5ff, transparent);
+            margin: 25px 0;
+            position: relative;
+        }
+
+        .circuit-line::before,
+        .circuit-line::after {
+            content: "";
+            position: absolute;
+            top: -4px;
+            width: 10px;
+            height: 10px;
+            background: #00e5ff;
+            border-radius: 50%;
+            box-shadow: 0 0 10px #00e5ff;
+        }
+
+        .circuit-line::before { left: 20%; }
+        .circuit-line::after { right: 20%; }
+
+        /* SECTION */
+        .section {
+            margin-bottom: 25px;
+        }
+
+        .section h2 {
+            font-size: 16px;
+            margin-bottom: 12px;
+            color: #00e5ff;
+            border-left: 3px solid #00e5ff;
+            padding-left: 8px;
+        }
+
+        /* TABEL BIODATA */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 14px;
+        }
+
+        td {
+            padding: 6px 4px;
+            color: #cfd8dc;
+        }
+
+        td.label {
+            width: 35%;
+            color: #00e5ff;
+            font-weight: bold;
+        }
+
+        td.colon {
+            width: 5%;
+            text-align: center;
+            color: #00e5ff;
+        }
+
+        tr:hover {
+            background: rgba(0,229,255,0.05);
+        }
+
+        /* SKILLS */
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill {
+            padding: 6px 12px;
+            border: 1px solid #00e5ff;
+            border-radius: 20px;
+            font-size: 12px;
+            color: #00e5ff;
+            box-shadow: 0 0 8px rgba(0,229,255,0.4);
+        }
+
+        footer {
+            text-align: center;
+            font-size: 12px;
+            color: #607d8b;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- HEADER -->
+    <div class="header">
+        <h1>Hamba Agung S</h1>
+        <p>Sentana Teknologi • Magang</p>
+    </div>
+
+    <!-- FOTO -->
+    <div class="profile-pic">
+        <img src="saya.png" alt="Foto Profil">
+    </div>
+
+    <div class="circuit-line"></div>
+
+    <!-- BIODATA -->
+    <div class="section">
+        <h2>Biodata</h2>
+        <table>
+            <tr>
+                <td class="label">NIM</td>
+                <td class="colon">:</td>
+                <td>2383207018</td>
+            </tr>
+            <tr>
+                <td class="label">Jurusan</td>
+                <td class="colon">:</td>
+                <td>Pendidikan Informatika</td>
+            </tr>
+            <tr>
+                <td class="label">Email</td>
+                <td class="colon">:</td>
+                <td>hambaagung11@gmail.com</td>
+            </tr>
+            <tr>
+                <td class="label">Status</td>
+                <td class="colon">:</td>
+                <td>Mahasiswa Aktif</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="circuit-line"></div>
+
+    <!-- SKILLS -->
+    <div class="section">
+        <h2>Skill & Interest</h2>
+        <div class="skills">
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">Git</div>
+        </div>
+    </div>
+
+    <footer>
+        © 2026 | Cyberpunk Profile System
+    </footer>
+
+</div>
+
+</body>
+</html>
