@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Profil | Ahmad Nasukhi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #333;
+        }
+
+        .card {
+            background: #fff;
+            width: 90%;
+            max-width: 900px;
+            border-radius: 20px;
+            box-shadow: 0 25px 50px rgba(0,0,0,0.2);
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            overflow: hidden;
+            animation: fadeIn 1.2s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .left {
+            background: linear-gradient(135deg, #764ba2, #667eea);
+            color: #fff;
+            padding: 40px 30px;
+            text-align: center;
+        }
+
+        .photo {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    border: 5px solid rgba(255,255,255,0.7);
+    background: url('img/ahmad.jpg') center/cover no-repeat;
+}
+
+        .left h2 {
+            font-size: 22px;
+            font-weight: 600;
+        }
+
+        .left p {
+            font-size: 14px;
+            opacity: 0.9;
+            margin-top: 8px;
+        }
+
+        .right {
+            padding: 40px;
+        }
+
+        .right h1 {
+            font-size: 28px;
+            font-weight: 700;
+            color: #764ba2;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 14px;
+            color: #777;
+            margin-bottom: 30px;
+        }
+
+        .section {
+            margin-bottom: 25px;
+        }
+
+        .section h3 {
+            font-size: 16px;
+            color: #667eea;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .section p {
+            font-size: 14px;
+            line-height: 1.7;
+            color: #555;
+        }
+
+        .info {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+
+        .info div {
+            background: #f4f6ff;
+            padding: 12px 15px;
+            border-radius: 10px;
+            font-size: 14px;
+        }
+
+        .info span {
+            font-weight: 600;
+            color: #764ba2;
+        }
+
+        footer {
+            text-align: center;
+            font-size: 12px;
+            color: #aaa;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .card {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <div class="left">
+        <div class="photo"></div>
+        <h2>Ahmad Nasukhi</h2>
+        <p>Mahasiswa</p>
+    </div>
+
+    <div class="right">
+        <h1>Profil Pribadi</h1>
+        <div class="subtitle">
+            Tugas Git Branch & HTML Profile
+        </div>
+
+        <div class="section">
+            <h3>Tentang Saya</h3>
+            <p>
+                Saya adalah mahasiswa yang tertarik pada pengembangan web,
+                teknologi informasi, dan pengelolaan sistem berbasis Git.
+                Saya senang mempelajari hal baru, bekerja secara terstruktur,
+                serta mengembangkan proyek dengan tampilan yang rapi dan profesional.
+            </p>
+        </div>
+
+        <div class="section">
+            <h3>Informasi Pribadi</h3>
+            <div class="info">
+                <div><span>Nama:</span> Ahmad Nasukhi</div>
+                <div><span>NIM:</span> (2383207020)</div>
+                <div><span>Program Studi:</span> (Pendidikan informatika)</div>
+                <div><span>Universitas:</span> (STKIP PGRI PACITAN)</div>
+                <div><span>Email:</span> a29109902@email.com</div>
+                <div><span>Hobi:</span> Coding, Desain</div>
+            </div>
+        </div>
+
+        <footer>
+            © 2026 | Profil Git Branch - Ahmad Nasukhi
+        </footer>
+    </div>
+</div>
+
+</body>
+</html>
